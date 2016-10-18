@@ -70,6 +70,10 @@ services:
             # To have some test accounts created.
             - LOAD_FIXTURES=${LOAD_FIXTURES}
             - SFM_REQS=${UI_REQS}
+            - SFM_PERFORM_SCAN_FREE_SPACE
+            - SFM_SCAN_FREE_SPACE_HOUR
+            - SFM_SCAN_FREE_SPACE_MINUTE
+            - SFM_FREE_SPACE_THRESHOLD
         logging:
             driver: json-file
             options:
